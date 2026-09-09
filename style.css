@@ -133,6 +133,22 @@ section h2 {
 
 .contact p {
     margin-bottom: 20px;
+    /* 1. Membuat efek animasi fade-up */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Mulai dari agak ke bawah */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);    /* Kembali ke posisi normal */
+  }
+}
+
+/* 2. Kelas untuk menerapkan animasi */
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+}
     color: #475569;
 }
 
